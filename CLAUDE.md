@@ -24,15 +24,18 @@ Daily notes are created at the vault root using date format `DD-MM-YYYY` (e.g., 
 
 ## Note Templates
 
-Three templates live in `04_Templates/`:
+Six templates live in `04_Templates/`:
 
 | Template | Frontmatter fields | Purpose |
 |---|---|---|
-| `Atomic Zettel (Concept Note).md` | `tags`, `date`, `related_links` | Single-concept permanent notes |
-| `Resource Note.md` | `status`, `topic`, `source_url` | Processed references and clippings |
-| `GDD (Game Design Document).md` | none | Game design documents for projects |
+| `Project Hub.md` | `project_name`, `status`, `type`, `start_date`, `due_date`, `tags` | One per project; links to Milestone notes; includes Dataview task query |
+| `Milestone Note.md` | `project`, `milestone`, `status`, `due_date` | One per milestone; task checklist + blockers |
+| `Daily Note.md` | *(none — Templater only)* | Daily capture, focus, Dataview active tasks, end-of-day reflection |
+| `Atomic Zettel (Concept Note).md` | `tags`, `date`, `source`, `status`, `related_links` | Single-concept permanent notes; `status` is `seedling` or `evergreen` |
+| `Resource Note.md` | `status`, `topic`, `source_url`, `date_processed` | Processed references; `status` starts as `To-Process` |
+| `GDD (Game Design Document).md` | *(none — Templater only)* | Game design documents for gamedev projects |
 
-When creating new notes, match the template for its category. Resource Notes use `status: To-Process` by default.
+**PM model:** Each project lives in `01_Projects/<Project Name>/`. The Hub note links to Milestone notes in the same folder. `Project Kanban.md` at the vault root is a live Dataview table of all projects.
 
 ## Active Plugins
 
@@ -41,7 +44,7 @@ When creating new notes, match the template for its category. Resource Notes use
 - **Templater** — template engine; `<% tp.date.now("DD MMMM YYYY") %>` syntax in templates
 - **Obsidian Copilot** — AI assistant with custom slash commands in `copilot/copilot-custom-prompts/`
 - **Calendar** — daily note navigation
-- **Obsidian Git** — auto-commits and syncs the vault to a Git remote; the vault does not have a `.git` repo initialized yet
+- **Obsidian Git** — auto-commits and syncs the vault to `git@github.com:Igrise12/patrick_vault.git`
 
 ## Working with This Vault
 
