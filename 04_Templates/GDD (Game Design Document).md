@@ -1,5 +1,5 @@
-# 🎮 Game Design Document: {{title}}
-**Project Name:** Zeldo: The Origin of Time
+# 🎮 Game Design Document: <% tp.file.title %>
+**Project Name:** <% tp.file.title %>
 **Lead Designer:** [[Patrick]]
 **Current Date:** <% tp.date.now("DD MMMM YYYY") %>
 **Status:** 🏗️ In-Development / Prototyping
@@ -8,10 +8,10 @@
 
 ## 1. Executive Summary
 > [!abstract] Elevator Pitch
-> Berikan penjelasan singkat (1-2 kalimat) yang membuat orang langsung tertarik dengan game ini.
+> *A 1-2 sentence pitch that immediately hooks the reader.*
 
-- **Genre:** Primary / Secondary
-- **Target Audience:** Siapa yang akan memainkan game ini?
+- **Genre:** *Primary / Secondary*
+- **Target Audience:** *Who is this game for?*
 - **Platform(s):** PC / Console / Mobile
 
 ---
@@ -19,7 +19,7 @@
 ## 2. Gameplay Mechanics
 ### Core Loop
 `Explore` ➔ `Combat` ➔ `Reward` ➔ `Upgrade`
-*(Ganti sesuai dengan alur utama game kamu)*
+*(Adapt to match your actual game loop)*
 
 ### Player Controls
 | Action | Input (PC) | Input (Controller) |
@@ -32,38 +32,37 @@
 > [!todo] Feature Priority List
 > | Feature Name | Description | Priority |
 > | :--- | :--- | :--- |
-> | **File** | Core interaction mechanic | High |
-> | **Branching Narrative** | Dynamic story choices | Medium |
-> | **Decision Trees** | AI and procedural logic | Low |
+> | | | High |
+> | | | Medium |
+> | | | Low |
 
 ---
 
 ## 3. Technical Specifications
-- **Game Engine:** [[Godot]] / Unity / Unreal
+- **Game Engine:** [[Godot]]
 - **Version Control:** Git (GitHub/GitLab)
-- **Art Style:** (Contoh: 3D Low-Poly / 2D Pixel Art)
+- **Art Style:** *e.g. 3D Low-Poly, 2D Pixel Art*
 - **Audio Requirements:** SFX, Background Music (BGM)
 
 ---
 
 ## 4. Narrative and Setting
 ### 🌍 World Building
-Jelaskan tentang setting, atmosfer, dan lore dunia *The Origin of Time*.
+*Describe the setting, atmosphere, and world lore.*
 
 ### 👤 Characters
-- **Protagonist:** Detail tentang karakter utama.
-- **Key NPCs:** Tokoh penting lainnya.
+- **Protagonist:** *Main character details.*
+- **Key NPCs:** *Important supporting characters.*
 
 ### 📜 Narrative Structure
-(Gunakan link ke file lain jika perlu)
-- [ ] Buat draft branching narrative di Twine/Obsidian Canvas.
+*(Link to other files if needed)*
 
 ---
 
 ## 5. Development Resources
 | Category | Tool Recommendation | Resource Link |
 | :--- | :--- | :--- |
-| **Engine** | Godot / Unity / Unreal | [Link]() |
+| **Engine** | Godot | [Link]() |
 | **3D Modeling** | Blender | [Link]() |
 | **2D Graphics** | Krita / Figma | [Link]() |
 | **Documentation** | Obsidian | [Link]() |
@@ -71,10 +70,10 @@ Jelaskan tentang setting, atmosfer, dan lore dunia *The Origin of Time*.
 ---
 
 ## 6. Key Takeaways & Tasks
-- [ ] **Prototype Early:** Test core mechanic sebelum coding sistem yang kompleks.
-- [ ] **Community:** Cek forum/Discord game dev untuk feedback.
-- [ ] **Reading:** Referensi "The Art of Game Design" oleh Jesse Schell.
+- [ ] **Prototype Early:** Test the core mechanic before building complex systems.
+- [ ] **Community:** Check game dev forums/Discord for early feedback.
+- [ ] **Reading:** Reference "The Art of Game Design" by Jesse Schell.
 
 ---
 ## 🛠️ Dev Log & Notes
-- (Gunakan bagian ini untuk catatan harian atau ide cepat)
+*(Use this section for daily notes and quick ideas.)*
