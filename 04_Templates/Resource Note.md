@@ -2,9 +2,16 @@
 status: To-Process
 topic: 
 source_url: 
+date_processed: <% tp.date.now("DD-MM-YYYY") %>
 ---
-# Resource Title
 
-| Key Takeaways | Action Items | Reference to Zettel |
-| :--- | :--- | :--- |
-| - | - | - |
+# <% tp.file.title %>
+
+## Key Takeaways
+- 
+
+## Action Items
+- [ ] 
+
+## Related Notes
+- 
